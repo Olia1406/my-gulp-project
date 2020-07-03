@@ -1,0 +1,742 @@
+@import 'base/base';
+@import 'base/fonts';
+@import 'base/variables';
+@import 'base/mixin';
+@import 'components/header';
+@import 'components/footer';
+@import 'pages/home';
+@import 'pages/about';
+@import 'pages/works';
+@import 'pages/contact';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.header{
+    height: 700px;
+    background-image: url('./../images/header.jpg') ;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.header_logo{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row;
+    /* margin: 46px 195px 0 210px; */
+    align-items: center;
+    width: 100%;
+    height: 24px;
+    margin: 0 auto;
+    padding-top: 30px;
+
+}
+.header_logo_left-part>p{
+    color: white;
+    font-family:'Montserrat';
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+   padding: 46px 0 0 180px;
+}
+.header_logo_right-part{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 42px 195px 0 0;
+}
+.header_logo_right-part>p{
+    color: white;
+    font-family:'Montserrat';
+    font-size: 14px;
+    line-height: 17px;
+    margin: 0 9px;
+}
+.header_logo_right-part_sUp{
+    line-height: 36px;
+    border: 2px solid white;
+    border-radius: 18px;
+    padding: 8px 18px;
+}
+.header_text{
+    width: 470px;
+    display: flex;
+    flex-direction: column;
+    margin: 195px auto 0;
+}
+.header_text_main-text{
+    font-family: 'Montserrat';
+    font-weight: bold;
+font-size: 52px;
+line-height: 63px;
+text-align: center;
+color: #FFFFFF;
+}
+.header_text_small-text{
+    font-family: 'Roboto';
+    font-weight: 300;
+font-size: 24px;
+line-height: 24px;
+text-align: center;
+color: #F7F3F2;
+margin-top: 20px;
+}
+.header_text_likeButton{
+    width: 225px;
+    height: 40px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+font-size: 14px;
+line-height: 17px;
+display: flex;
+justify-content: center;
+align-items: center;
+color: #FFFFFF;
+border-radius: 20px;
+background-color: tomato;
+align-self: center;
+margin-top: 45px;
+}
+.title,
+.ideas{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+   
+}
+
+.title_text,
+.ideas_text{   
+font-family: 'Montserrat';
+font-weight: bold;
+font-size: 26px;
+line-height: 32px;
+color: #444444;
+margin-top: 89px;
+}
+.interest-box{
+    width: 940px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 33px;
+    /* margin-bottom: 33px; */
+    /* margin-top: 0; */
+}
+
+.interest-box_1,
+.interest-box_2,
+.interest-box_3{  
+    width: 300px;
+    height: inherit;
+    background-image: url('./../Images/step-1.png');
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin: 35px 10px 0 10px;
+    border-radius: 4px;
+    /* padding-top: 224px; */
+}
+.interest-box_2{
+    background-image: url('./../Images/step-2.png');
+}
+.interest-box_3{
+    background-image: url('./../Images/step-3.png');
+}
+.interest-box_1_likeButton,
+.interest-box_2_likeButton,
+.interest-box_3_likeButton{
+   width: 72px;
+    height: 12px;
+    font-family: 'Montserrat';
+    font-weight: normal;
+    padding: 10px 28px 8px;
+    font-size: 10px;
+    line-height: 12px;
+display: flex;
+justify-content: center;
+align-items: center;
+color: #FFFFFF;
+border-radius: 10px;
+background-color: tomato;
+align-self: flex-start;
+margin-left: 25px;
+letter-spacing: 2px;
+}
+.interest-box_1_big-text,
+.interest-box_2_big-text,
+.interest-box_3_big-text{
+    font-family: Montserrat;
+font-weight: bold;
+font-size: 24px;
+line-height: 26px;
+color: #FFFFFF;
+margin: 18px 0 0 25px;
+}
+.interest-box_1_small-text,
+.interest-box_2_small-text,
+.interest-box_3_small-text{
+    font-family: Roboto;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 14px;
+color: #E3E3E3;
+margin: 10px 25px 21px 25px;
+}
+.partners-box{
+    height: 224px;
+    display: flex;
+    justify-content: center;  
+    margin: 35px auto 0; 
+}
+.groupe{
+    display: flex;
+    flex-direction: row;
+    /* height: 224; */
+}
+
+.partners-box_partner1,
+.partners-box_partner2,
+.partners-box_partner3,
+.partners-box_partner4{
+    width: 221px;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 8px 0 8px;
+}
+
+.partners-box_partner1_photo,
+.partners-box_partner2_photo,
+.partners-box_partner3_photo,
+.partners-box_partner4_photo{
+    width: 120px;
+height: 120px;
+border-radius: 50%;
+background-image: url('./../Images/bradley.png');
+}
+.partners-box_partner1_photo_icon,
+.partners-box_partner2_photo_icon,
+.partners-box_partner3_photo_icon,
+    .partners-box_partner4_photo_icon{
+    width: 35px;
+    height: 35px;
+    background-color: #FF4E50;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid white;
+    position: relative;
+    top: 88px;
+    left: 88px;
+
+}
+.partners-box_partner2_photo_icon{
+    background-color: #19D4CA;
+}
+.partners-box_partner3_photo_icon{
+    background-color:  #FFA710;  
+}
+.partners-box_partner4_photo_icon{
+    background-color:  #667DF3; 
+}
+img{
+    width: 16px;
+    height: 16px;
+}
+.partners-box_partner2_photo{
+    background-image: url('./../Images/marie.png');   
+}
+.partners-box_partner3_photo{
+    background-image: url('./../Images/diana.png');   
+}
+.partners-box_partner4_photo{
+    background-image: url('./../Images/christopher.png');   
+}
+.partners-box_partner1_about,
+.partners-box_partner2_about,
+.partners-box_partner3_about,
+.partners-box_partner4_about{
+    width: 221px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.partners-box_partner1_about_name,
+.partners-box_partner2_about_name,
+.partners-box_partner3_about_name,
+.partners-box_partner4_about_name{
+    font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 17px;
+color: #444444;
+margin-top: 15px;
+}
+.partners-box_partner1_about_intr_interest,
+.partners-box_partner2_about_intr_interest,
+.partners-box_partner3_about_intr_interest,
+.partners-box_partner4_about_intr_interest{
+    font-family: Roboto;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+color: #666666;
+margin-top: 13px;
+}
+.seeOther{
+    width: 180px;
+height: 40px;
+background: #FFFFFF;
+border: 2px solid #FF4E50;
+border-radius: 40px;
+margin: 36px auto 0;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.seeOther_text{
+    font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 17px;
+color: #FF4E50;
+}
+.ideas-container{
+    width: 940px;
+height:  970px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+margin: 35px auto 0;
+}
+.ideas-container_level1,
+.ideas-container_level2,
+.ideas-container_level3{
+    width: inherit;
+    height: 310px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.ideas-container_level1_sports,
+.ideas-container_level1_health,
+.ideas-container_level1_extreme,
+.ideas-container_level2_games,
+.ideas-container_level3_trevelling,
+.ideas-container_level2_culture,
+.ideas-container_level3_relaxation{
+    height: 310px;
+    width: 300px;
+    background-image: url('./../images/sport.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    color: #FFFFFF;
+    border-radius: 4px;
+}
+.ideas-container_level1_health{
+    background-image: url('./../Images/wellness.png');
+}
+.ideas-container_level1_extreme{
+    background-image: url('./../Images/extreme.png');
+    text-align: center;
+}
+.ideas-container_level2_games{
+    background-image: url('./../Images/games.png');
+}
+.ideas-container_level3_trevelling{
+    background-image: url('./../Images/travelling.png');
+}
+.ideas-container_level2_culture{
+    width: 620px;
+    background-image: url('./../Images/culture.png');   
+}
+.ideas-container_level3_relaxation{
+    width: 620px;
+    background-image: url('./../Images/enjoyment.png');
+}
+.createActivity{
+    width: 482px;
+    margin: 43px auto 0;
+    height: 89px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.createActivity_small-text{
+    font-family: Roboto;
+font-weight: 300;
+font-size: 18px;
+color: #666666;
+}
+form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+input[type=text]{
+    width: 299px;
+height: 40px;
+background: #FFFFFF;
+border: 1px solid #D4D4D4;
+margin: 0 10px;
+box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.073313);
+border-radius: 3px;
+padding-left: 10px;
+}
+input[type=button]{
+    width: 172.12px;
+height: 40px;
+background: #FF4E50;
+border-radius: 40px;
+color: lightgoldenrodyellow;
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: Montserrat;
+/* font-style: normal; */
+font-weight: bold;
+font-size: 14px;
+line-height: 17px;
+border: none;
+}
+.hr-red{
+    height: 2px;
+    background-color: #FF4E50;
+    margin-top: 100px;
+}
+.footer{
+    height: 224px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 38px;
+    padding: 0 10% ;
+}
+.footer_dreamshare{
+    width: 119px;
+height: 20px;
+font-family: Montserrat;
+font-weight: normal;
+font-size: 16px;
+line-height: 20px;
+display: flex;
+align-items: center;
+color: #FF4E50;
+}
+.footer_company{
+    height: 184px;
+    width: 114px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.footer_company_title,
+.footer_partners_title{
+    font-family: Montserrat;
+font-weight: bold;
+font-size: 14px;
+color: #444444;
+}
+.footer_company_list{
+    height: 156px;
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.footer_company_list_item1,
+.footer_company_list_item2,
+.footer_company_list_item3,
+.footer_company_list_item4,
+.footer_company_list_item5,
+.footer_company_list_item6{
+    font-family: Roboto;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 26px;
+color: #999999;
+}
+.footer_logo{
+    height: 43px;
+    width: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between ;
+    align-items: flex-end;
+    margin-top: 5px;
+}
+.footer_logo_text{
+    font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 10px;
+line-height: 12px;
+letter-spacing: 1px;
+color: #CCCCCC;
+}
+.footer_logo_img{
+    width: 110px;
+height: 24px;
+background-image: url('./../Images/logo.svg') ;
+margin-top: 7px;
+}
+/* медіа на середній екран */
+@media screen and (max-width: 970px){
+
+    .header_logo_left-part>p{
+        padding: 46px 0 0 48px;
+     }   
+     .header_logo_right-part{
+         padding: 40px 50px 0 0;
+     }
+     .title_text,
+     .ideas_text{   
+     font-size: 22px;
+     line-height: 27px;
+     margin-top: 89px;
+     }
+     .interest-box{
+        width: 748px;}
+
+  .interest-box_1,
+ .interest-box_2,
+ .interest-box_3{  
+     width: 236px;
+ }
+
+ .partners-box{
+    width: 500px;
+    height: 464px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;  
+}
+.groupe{
+    display: flex;
+    flex-direction: row;
+}
+.seeOther{
+margin: 52px auto 0;
+}
+.ideas-container{
+    width: 748px;
+}
+.ideas-container_level1_sports,
+.ideas-container_level1_health,
+.ideas-container_level1_extreme,
+.ideas-container_level2_games,
+.ideas-container_level3_trevelling,
+.ideas-container_level2_culture,
+.ideas-container_level3_relaxation{
+    width: 236px;
+}
+.ideas-container_level2_culture{
+    width: 492px; 
+}
+.ideas-container_level3_relaxation{
+    width: 492px;
+}
+}
+/* медіа 2*/
+@media screen and (max-width: 768px){
+    
+    .header{
+        height: 540px;}
+
+    .header_logo{
+        display: flex;
+        flex-flow: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        /* margin: 46px 195px 0 210px; */
+        width: 100%;
+        height: 175px;
+        margin: 0 auto;
+        padding-top: 0px;
+    }
+    .header_logo_left-part>p{
+    padding: 0;
+    }
+    .header_logo_right-part{
+        padding: 20px 0 0 0;
+    }
+    .header_text{
+        width: 280px;
+        margin: 27px auto 0;
+    }
+    .header_text_main-text{
+    font-size: 30px;
+    line-height: 37px;
+   
+    }
+    .header_text_small-text{
+    font-size: 18px;
+    margin-top: 5px;
+    }
+    .header_text_likeButton{
+        width: 280px;
+        height: 40px;
+    margin-top: 18px;
+    }
+    .title_text{   
+        font-size: 23px;
+line-height: 27px;
+    margin-top: 35px;
+    }
+    .interest-box{
+        width: 300px ;
+        height: 750px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    margin: 10px auto 0;
+
+    }
+    .interest-box_1,
+.interest-box_2,
+.interest-box_3{  
+    width: 300px;
+    height: 245px;
+    margin: 5px 0;
+}
+.partners-box{
+    height: 880px;
+    width: 300px;   
+}
+.groupe{
+    display: flex;
+    flex-direction: column;
+}
+.partners-box_partner1,
+.partners-box_partner2,
+.partners-box_partner3,
+.partners-box_partner4{
+    margin: 5px 0;
+}
+.seeOther{
+    
+    width: 280px;
+}  
+.ideas,
+.title{
+width: 300px;
+height: 55px;
+text-align: center;
+}
+.ideas_text{   
+    font-size: 22px;
+line-height: 27px;
+margin-top: 35px;
+
+}
+.ideas-container{
+    width: 300px;
+height:  900px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+margin: 70px auto 0;
+}
+.ideas-container_level1,
+.ideas-container_level2,
+.ideas-container_level3{
+    width: inherit;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.ideas-container_level1_sports,
+.ideas-container_level1_health,
+.ideas-container_level1_extreme,
+.ideas-container_level2_games,
+.ideas-container_level3_trevelling,
+.ideas-container_level2_culture,
+.ideas-container_level3_relaxation{
+    height: 120px;
+    width: 300px;
+    display: flex;
+    margin-bottom: 10px;
+    font-size: 23px;
+    text-align: center;
+   
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+input[type=text]{
+    width: 280px;
+margin: 10px 0;
+}
+input[type=button]{
+    width: 280px;
+}
+.hr-red{
+    margin-top: 73px;
+}
+.createActivity{
+    width: 300px;}
+.footer{
+    height: 204px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.footer_company{
+    height: 184px;
+    width: 114px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer_company_list{
+    height: 50px;
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;  
+}
+.footer_logo{
+    align-items: center;
+    /* justify-content: space-around; */
+}
+
+}
+
